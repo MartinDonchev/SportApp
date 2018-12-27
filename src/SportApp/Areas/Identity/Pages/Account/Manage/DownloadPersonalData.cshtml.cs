@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
-using SportApp.Areas.Identity.Data;
+using SportApp.Data.Models;
 
 namespace SportApp.Areas.Identity.Pages.Account.Manage
 {

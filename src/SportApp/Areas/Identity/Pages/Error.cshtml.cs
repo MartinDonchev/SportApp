@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 
-namespace SportApp.Areas.Identity.Pages
+namespace SportApp.Data.Models
 {
     [AllowAnonymous]
     public class ErrorModel : PageModel

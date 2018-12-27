@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using SportApp.Models;
-using SportApp.Areas.Identity.Data;
+using SportApp.Data.Models;
 
 namespace SportApp
 {

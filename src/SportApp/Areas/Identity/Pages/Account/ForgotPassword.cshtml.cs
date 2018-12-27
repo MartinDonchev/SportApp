@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using SportApp.Areas.Identity.Data;
+using SportApp.Data.Models;
 
 namespace SportApp.Areas.Identity.Pages.Account
 {
