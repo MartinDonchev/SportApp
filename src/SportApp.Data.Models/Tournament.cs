@@ -15,6 +15,10 @@ namespace SportApp.Data.Models
 
         public string Name { get; set; }
 
+        public string Sponsor { get; set; }
+
+        public string Television { get; set; }
+
         public virtual ICollection<Team> Teams { get; set; }
     }
 }
