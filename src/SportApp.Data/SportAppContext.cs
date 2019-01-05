@@ -10,7 +10,13 @@ using SportApp.Data.Models;
 namespace SportApp.Models
 {
     public class SportAppContext : IdentityDbContext<SportAppUser>
-    {
+    {       
+
+        public SportAppContext(DbContextOptions<SportAppContext> options)
+            : base(options)
+        {
+        }
+
         public DbSet<Tournament> Tournaments { get; set; }
 
         public DbSet<Team> Teams { get; set; }
@@ -20,11 +26,6 @@ namespace SportApp.Models
         public DbSet<Match> Matches { get; set; }
 
         public DbSet<Stadium> Stadiums { get; set; }
-
-        public SportAppContext(DbContextOptions<SportAppContext> options)
-            : base(options)
-        {
-        }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
