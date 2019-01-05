@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace SportApp.Data.Models
@@ -17,8 +18,10 @@ namespace SportApp.Data.Models
 
         public virtual Tournament Tournament { get; set; }
 
+        [Required(ErrorMessage = "Please enter a team name")]
         public string Name { get; set; }
 
+        [Required(ErrorMessage = "Please enter a town name")]
         public string Town { get; set; }
 
         public DateTime YearOfFoundation { get; set; }
