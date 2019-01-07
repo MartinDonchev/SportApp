@@ -15,4 +15,9 @@
     <ProjectReference Include="..\SportApp.Data\SportApp.Data.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Areas\Stadiums\Data\" />
+    <Folder Include="Areas\Stadiums\Models\" />
+  </ItemGroup>
+
 </Project>
