@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace SportApp.Data.Models
@@ -13,10 +14,13 @@ namespace SportApp.Data.Models
 
         public int Id { get; set; }
 
+        [Required(ErrorMessage = "Please enter name")]
+        [RegularExpression(@"([A-Za-z ]+)")]
         public string Name { get; set; }
 
         public virtual ICollection<Match> Matches { get; set; }
 
+        [Range(1000,100000)]
         public int Capacity { get; set; }
 
         public int TeamId { get; set; }

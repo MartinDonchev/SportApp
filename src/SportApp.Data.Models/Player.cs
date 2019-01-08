@@ -14,6 +14,7 @@ namespace SportApp.Data.Models
         public int TeamId { get; set; }
 
         [Required(ErrorMessage = "Please enter a full name of the player")]
+        [RegularExpression(@"([A-Za-z ]+)")]
         public string FullName { get; set; }
 
         [Required]

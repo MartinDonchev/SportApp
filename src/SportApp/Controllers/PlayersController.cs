@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -46,6 +47,7 @@ namespace SportApp.Controllers
         }
 
         // GET: Players/Create
+        [Authorize]
         public IActionResult Create()
         {
             ViewData["TeamId"] = new SelectList(_context.Teams, "Id", "Name");
@@ -57,6 +59,7 @@ namespace SportApp.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public async Task<IActionResult> Create([Bind("Id,TeamId,FullName,Age")] Player player)
         {
             if (ModelState.IsValid)
@@ -123,6 +126,7 @@ namespace SportApp.Controllers
         }
 
         // GET: Players/Delete/5
+        [Authorize]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -144,6 +148,7 @@ namespace SportApp.Controllers
         // POST: Players/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var player = await _context.Players.FindAsync(id);
