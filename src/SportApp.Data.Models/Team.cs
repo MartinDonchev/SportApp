@@ -19,9 +19,11 @@ namespace SportApp.Data.Models
         public virtual Tournament Tournament { get; set; }
 
         [Required(ErrorMessage = "Please enter a team name")]
+        [RegularExpression(@"([A-Za-z ]+)")]
         public string Name { get; set; }
 
         [Required(ErrorMessage = "Please enter a town name")]
+        [RegularExpression(@"([A-Za-z ]+)")]
         public string Town { get; set; }
 
         public DateTime YearOfFoundation { get; set; }
