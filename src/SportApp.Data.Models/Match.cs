@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace SportApp.Data.Models
@@ -18,6 +19,8 @@ namespace SportApp.Data.Models
 
         public DateTime DateOfMatch { get; set; }
 
+        [Required(ErrorMessage = "Please enter name")]
+        [RegularExpression(@"([A-Za-z ]+)")]
         public string Referee { get; set; }
     }
 }
