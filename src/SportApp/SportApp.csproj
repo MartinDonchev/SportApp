@@ -13,6 +13,7 @@
   <ItemGroup>
     <ProjectReference Include="..\SportApp.Data.Models\SportApp.Data.Models.csproj" />
     <ProjectReference Include="..\SportApp.Data\SportApp.Data.csproj" />
+    <ProjectReference Include="..\SportApp.Test\SportApp.Tests.csproj" />
   </ItemGroup>
 
   <ItemGroup>

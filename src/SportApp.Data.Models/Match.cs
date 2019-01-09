@@ -17,6 +17,7 @@ namespace SportApp.Data.Models
 
         public virtual Team AwayTeam { get; set; }
 
+        [UIHint("Date")]
         public DateTime DateOfMatch { get; set; }
 
         [Required(ErrorMessage = "Please enter name")]

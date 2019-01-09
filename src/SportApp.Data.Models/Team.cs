@@ -26,6 +26,7 @@ namespace SportApp.Data.Models
         [RegularExpression(@"([A-Za-z ]+)")]
         public string Town { get; set; }
 
+        [UIHint("Date")]
         public DateTime YearOfFoundation { get; set; }
 
         public virtual ICollection<Player> Players { get; set; }
