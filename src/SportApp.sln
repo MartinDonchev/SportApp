@@ -11,8 +11,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SportApp.Data.Models", "Spo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportApp.Tests", "SportApp.Test\SportApp.Tests.csproj", "{BECCC9E5-E0E2-470E-8F46-02C60FDBFDE9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportApp.Services.Constants", "SportApp.Services.Constants\SportApp.Services.Constants.csproj", "{6F9632A1-FB2B-41F8-9ECB-2588703700AE}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,10 +33,6 @@ Global
 		{BECCC9E5-E0E2-470E-8F46-02C60FDBFDE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BECCC9E5-E0E2-470E-8F46-02C60FDBFDE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BECCC9E5-E0E2-470E-8F46-02C60FDBFDE9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6F9632A1-FB2B-41F8-9ECB-2588703700AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6F9632A1-FB2B-41F8-9ECB-2588703700AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6F9632A1-FB2B-41F8-9ECB-2588703700AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6F9632A1-FB2B-41F8-9ECB-2588703700AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
